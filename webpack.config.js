@@ -4,7 +4,8 @@ module.exports = {
     entry: './frontend/benchbnb.jsx',
     mode: 'development',
     output: {
-        filename: './app/assets/javascripts/bundle.js',
+        path: path.join(__dirname, 'app', 'assets', 'javascripts'),
+        filename: 'bundle.js'
     },
     module: {
         rules: [
